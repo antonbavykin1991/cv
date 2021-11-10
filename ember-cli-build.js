@@ -42,7 +42,9 @@ module.exports = function (defaults) {
     staticComponents: true,
     splitAtRoutes: ['index', 'skills', 'history', 'contacts'],
     packagerOptions: {
-      webpackConfig: {},
+      publicAssetURL: isProduction
+        ? 'https://antonbavykin1991.github.io/cv/'
+        : '/',
     },
   });
 };
