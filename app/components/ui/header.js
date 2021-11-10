@@ -1,12 +1,11 @@
 import Component from '@glimmer/component';
-import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
+import { inject as service } from '@ember/service';
 
 export default class HeaderComponent extends Component {
-  @tracked isDark;
+  @service app;
 
   @action onClick(e) {
-    this.isDark = e.target.checked;
-    document.querySelector('html').classList.toggle('dark');
+    this.app.darkMode = e.target.checked;
   }
 }

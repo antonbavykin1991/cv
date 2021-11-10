@@ -8,7 +8,7 @@
     </div>
     <div class="flex flex-row items-center">
       <span class="font-bold text-sm mr-4">Dark mode:</span>
-      <input value={{this.isDark}} type="checkbox" name="" {{on "click" (fn this.onClick)}}>
+      <input checked={{this.app.darkMode}} type="checkbox" name="" {{on "click" this.onClick}}>
     </div>
   </div>
 </div>
