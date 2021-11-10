@@ -1,0 +1,33 @@
+.progress-bar {
+  --value: 0%;
+  --negative-value: calc(var(--value) - 100%);
+  width: 100%;
+  height: 6px;
+  border-radius: 2px;
+  position: relative;
+  @apply bg-red-200;
+  overflow: hidden;
+}
+
+.progress-bar:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transform: translateX(var(--negative-value));
+  @apply bg-red-400;
+  animation: slideInFromLeft 0.5s;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    @apply bg-red-100;
+  }
+  99% {
+    transform: translateX(var(--negative-value));
+    @apply bg-red-400;
+  }
+}
