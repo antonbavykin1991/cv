@@ -636,6 +636,16 @@ img {
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
 .object-cover {
   object-fit: cover;
 }
@@ -738,6 +748,11 @@ img {
 .text-red-400 {
   --tw-text-opacity: 1;
   color: rgba(248, 113, 113, var(--tw-text-opacity));
+}
+
+.dark .dark\:text-white {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 *, ::before, ::after {
