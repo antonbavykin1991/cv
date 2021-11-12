@@ -34,9 +34,6 @@ module.exports = function (defaults) {
         ],
       },
     },
-    fingerprint: {
-      prepend: isProduction ? 'https://antonbavykin1991.github.io/cv/' : '/',
-    },
   });
 
   return require('@embroider/compat').compatBuild(app, Webpack, {
