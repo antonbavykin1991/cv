@@ -1,10 +1,13 @@
 <div class="flex flex-row bg-white dark:bg-gray-700 shadow-sm">
   <div class="flex flex-row justify-between items-center container mx-auto p-4">
     <div class="flex flex-row items-center">
-      <LinkTo @route="index" @activeClass="border-b-2 border-red-600" class="ui-link p-2 text-sm font-bold">About</LinkTo>
+      <LinkTo
+        @route="index"
+        @activeClass="border-b-2 border-red-600"
+        class="ui-link p-2 text-sm font-bold"
+      >About</LinkTo>
       <LinkTo @route="skills" @activeClass="border-b-2 border-red-600" class="ui-link p-2 text-sm font-bold">Skills</LinkTo>
       <LinkTo @route="history" @activeClass="border-b-2 border-red-600" class="ui-link p-2 text-sm font-bold">History</LinkTo>
-      <LinkTo @route="contacts" @activeClass="border-b-2 border-red-600" class="ui-link p-2 text-sm font-bold">Contacts</LinkTo>
     </div>
     <div class="flex flex-row items-center">
       <span class="font-bold text-sm mr-4">Dark mode:</span>

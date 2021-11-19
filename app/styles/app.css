@@ -7,3 +7,65 @@
   transition-duration: 0.2s;
   transition-property: background;
 } */
+
+.animated {
+  --value: -10%;
+  transform: translateX(0);
+  opacity: 1;
+  animation: fadeIn 0.5s;
+}
+
+.animated .dot {
+  opacity: 1;
+  animation: dotAnimation 2s;
+}
+
+.line {
+  --value: -100%;
+  opacity: 1;
+  animation: lineAnimation 1s;
+  transform: translateX(0);
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(var(--value));
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes lineAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(var(--value));
+  }
+
+  50% {
+    transform: translateX(var(--value));
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dotAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

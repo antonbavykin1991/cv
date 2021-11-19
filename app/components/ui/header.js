@@ -8,4 +8,8 @@ export default class HeaderComponent extends Component {
   @action onClick(e) {
     this.app.darkMode = e.target.checked;
   }
+
+  @action afterClick() {
+    console.log('afterClick');
+  }
 }

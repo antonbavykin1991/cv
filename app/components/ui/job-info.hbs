@@ -1,0 +1,27 @@
+<div class="w-full lg:w-1/2">
+  <div style="{{if @isRight "--value:10%"}}" class="animated flex flex-col flex-1 bg-white dark:bg-gray-700 {{if @isRight "lg:ml-8 lg:mt-12" "lg:mr-8"}} mb-12 relative" ...attributes>
+    <div style="{{if @isRight "--value:100%"}}" class="z-0 line invisible lg:visible w-8 h-1 bg-red-200 top-0 bottom-0 my-auto absolute {{if @isRight "left-0 -ml-8" "right-0 -mr-8"}}">
+      <span class="dot absolute top-0 w-2 h-2 {{if @isRight "left-0 -ml-1" "right-0 -mr-1"}} -mt-0.5  rounded-full bg-red-400"></span>
+    </div>
+    <div class="bg-red-400 h-1 w-full"></div>
+    <div class="bg-white dark:bg-gray-700 relative z-10 flex flex-col p-8">
+      <div class="text-center text-red-400 font-bold text-sm mb-4">
+        {{@date}}
+      </div>
+      <div class="font-bold text-sm text-center mb-2">
+        {{@name}}
+      </div>
+      <div class="text-sm text-center mb-4">
+        {{@position}}
+      </div>
+      <div class="text-sm mb-8">
+        {{@description}}
+      </div>
+      <div class="flex flex-row text-sm text-white flex-wrap">
+        {{#each @skills as |skill|}}
+          <span class="px-2 py-1 border-b-2 bg-red-400 mr-2 mb-2">{{skill}}</span>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
