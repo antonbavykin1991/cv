@@ -551,10 +551,6 @@ img {
   width: 8rem;
 }
 
-.w-96 {
-  width: 24rem;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1032,6 +1028,14 @@ input:checked[type="checkbox"]:before {
   .md\:-mx-12 {
     margin-left: -3rem;
     margin-right: -3rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
   }
 }
 
