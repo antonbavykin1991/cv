@@ -10,7 +10,7 @@
       <LinkTo @route="history" @activeClass="border-b-2 border-red-600" class="ui-link p-2 text-sm font-bold">History</LinkTo>
     </div>
     <div class="flex flex-row items-center">
-      <span class="font-bold text-sm mr-4">Dark mode:</span>
+      <span class="invisible sm:visible font-bold text-sm mr-4">Dark mode:</span>
       <input checked={{this.app.darkMode}} type="checkbox" name="" {{on "click" this.onClick}}>
     </div>
   </div>
