@@ -23,7 +23,7 @@
 .line {
   --value: -100%;
   opacity: 1;
-  animation: lineAnimation 1s;
+  animation: lineAnimation 0.5s;
   transform: translateX(0);
 }
 
