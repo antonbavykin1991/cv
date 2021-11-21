@@ -43,9 +43,9 @@ module.exports = function (defaults) {
     staticComponents: true,
     splitAtRoutes: ['index', 'skills', 'history', 'contacts'],
     packagerOptions: {
-      publicAssetURL: isProduction
-        ? 'https://antonbavykin1991.github.io/cv/'
-        : '/',
+      // publicAssetURL: isProduction
+      //   ? 'https://antonbavykin1991.github.io/cv/'
+      //   : '/',
     },
   });
 };
